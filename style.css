@@ -1,0 +1,500 @@
+/* MAIN CFG */
+body {
+    margin: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-image: url(img/wallpaper.jpg);
+    background-repeat: no repeat;
+    background-size: cover;
+    height: 100%;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* FIM MAIN CFG */
+
+
+/* HEADER */
+.MainHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #6495ED
+    ;
+}
+
+.HeaderMenu {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    color: white !important;
+    margin-right: 30px;
+    font-size: 18px;
+}
+
+.HeaderMenu ul li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.HeaderLogo {
+    margin-left: 30px;
+}
+
+/* FIM HEADER */
+
+
+/* MID LOGO */
+.MainContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/* FIM MID LOGO */
+
+
+/* FOOTER */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: #6495ED;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+}
+
+footer p {
+    margin: 0px;
+}
+
+.foot {
+    bottom: 0;
+    position: fixed;
+}
+
+/* FIM FOOTER */
+
+
+/* PARALLAX */
+.parallax {
+    background-image: url(img/parallax4.jpg);
+}
+
+.parallax2 {
+    background-image: url(img/parallax1.jpg);
+}
+
+.parallax3 {
+    background-image: url(img/parallax2.jpg);
+}
+
+.parallax4 {
+    background-image: url(img/parallax3.jpg);
+}
+
+.parallax5 {
+    background-image: url(img/parallax5.jpg);
+}
+
+.parallax6 {
+    background-image: url(img/parallax6.jpg);
+}
+
+.parallaxabout {
+    background-image: url(img/parallax4.jpg);
+}
+
+.parallaxabout {
+    position: relative;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    overflow: hidden;
+    width: 100%;
+    height: 550px;
+    text-align: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.parallax,
+.parallax2,
+.parallax3,
+.parallax4,
+.parallax5,
+.parallax6 {
+    position: relative;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    overflow: hidden;
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.parallax:before,
+.parallax2:before,
+.parallax3:before,
+.parallax4:before,
+.parallax5:before,
+.parallax6:before,
+.parallaxabout:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.parallax h2,
+.parallax2 h2,
+.parallax3 h2,
+.parallax4 h2,
+.parallax p,
+.parallax5 img,
+.parallax6 ul,
+.parallax6 h2,
+.parallaxabout h2,
+.parallaxabout img,
+.parallaxabout p {
+    color: white;
+    text-align: center;
+    position: relative;
+    font-family: arial;
+    font-size: 32px;
+}
+
+/* FIM PARALLAX */
+
+
+/* MENU FINAL - INDEX */
+.Icon {
+    filter: invert(100%);
+}
+
+.UlEnd ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    font-size: 20px;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+}
+
+
+.EndContainer a {
+    transition: 0.23s;
+}
+
+.EndContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+.UlEnd li a:hover {
+    color: deeppink !important;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+    margin-right: 9px;
+}
+
+
+.UlEnd a {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    padding: 4px 0;
+    transition: 0.23s;
+}
+
+.UlEnd li a::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 3px;
+    top: 100%;
+    left: 0;
+    background: #ff7000;
+    transition: transform 0.5s;
+    transform: scaleX(0);
+    transform-origin: right;
+}
+
+.UlEnd a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.EndContainer h2 {
+    color: white;
+}
+
+/* FIM MENU FINAL - INDEX */
+
+
+/* GALERIA */
+.carousel {
+    margin-top: 180px;
+    margin-left: 50px;
+    display: flex;
+    justify-content: center;
+    gap: .7em;
+}
+
+.carousel--item {
+    min-width: 360px;
+    height: 540px;
+    border-radius: .4em;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.85;
+    transition: 300ms ease;
+}
+
+.carousel--item:hover {
+    opacity: 1;
+    transform: scale(1.01);
+    transform-origin: bottom;
+}
+
+.one {
+    background-image: url(img/galeria1.jpg);
+}
+
+.two {
+    background-image: url(img/galeria2.jpg);
+}
+
+.three {
+    background-image: url(img/galeria3.webp);
+}
+
+.four {
+    background-image: url(img/galeria4.webp);
+}
+
+.five {
+    background-image: url(img/galeria5.jpg);
+}
+
+/* FIM GALERIA */
+
+
+/* PRODUTOS */
+.ProductsContainer {
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    border: 1px solid #6495ED;
+    border-radius: 8px;
+    width: 800px;
+}
+
+.ProductBuy {
+    border: 1px solid #6495ED;
+    background-color: #6495ED;
+    border-radius: 10px;
+    padding: 6px;
+    font-size: 18px;
+}
+
+.ProductsSep {
+    display: flex;
+    margin-top: 25px;
+}
+
+.ProductsSep1 {
+    margin-left: 100px;
+}
+/* FIM PRODUTOS */
+
+
+/* ABOUT */
+.ContainerAbout {
+    display: flex;
+    flex-direction: column;
+}
+
+.parallaxabout{
+    height: 500px !important;
+}
+
+.AboutText {
+    display: flex;
+    font-size: 22px;
+    text-align: justify !important;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.Maps{
+    margin-top: 50px;
+}
+
+.MapsImg{
+    width: 600px;
+    border-radius: 10px;
+}
+/* FIM ABOUT */
+
+
+/* NAVBAR */
+.HeaderMenu li a:hover {
+    color: black !important;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+    margin-right: 9px;
+}
+
+.HeaderMenu a {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    padding: 4px 0;
+    transition: 0.23s;
+}
+
+.HeaderMenu li a::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 3px;
+    top: 100%;
+    left: 0;
+    background: #FFD700;
+    transition: transform 0.5s;
+    transform: scaleX(0);
+    transform-origin: right;
+}
+
+.HeaderMenu a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+/* FIM NAVBAR */
+
+
+/* SERVIÇOS */
+.AgendaService{
+    border: 1px solid #6495ED;
+    background-color: #6495ED;
+    border-radius: 10px;
+    padding: 8px;
+    display: flex;
+    width: 80px;
+    justify-content: center;
+    transition: 0.23s;
+}
+
+.AgendaService:hover{
+    background-color: deeppink;
+}
+
+.Services{
+    display: flex;
+    justify-content: center;
+    margin-left: 60px;
+    margin-top: 150px;
+    align-items: center;
+}
+
+.ServiceDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ServicesContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.Service1Image{
+    border-radius: 10px;
+}
+
+.Services p{
+    width: 250px;
+}
+/* FIM SERVIÇOS */
+
+
+/* AGENDAMENTO */
+.LogoMain{
+    display: flex;
+    justify-content: center;
+}
+
+.Agendamento{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.InputTopic{
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.InputServices{
+    display: flex;
+    align-items: center;
+}
+
+.Options{
+    margin-left: 10px;
+}
+
+input, select{
+    width: 100%;
+    height: 23px;
+    border-radius: 10px;
+    border: 1px solid #6495ED;
+    outline: none;
+}
+
+.ConfirmAgenda{
+    border: 1px solid #6495ED;
+    border-radius: 10px;
+    padding: 6px;
+    background-color: #6495ED;
+
+}
+
+.ConfirmAgendaDiv{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.ResText{
+    font-size: 22px;
+}
+
+.ResBack{
+    border: 1px solid #6495ED;
+    border-radius: 10px;
+    background-color: #6495ED;
+    padding: 6px;
+}
+
+/* FIM AGENDAMENTO */
